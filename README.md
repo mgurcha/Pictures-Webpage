@@ -1,4 +1,4 @@
-<t1>Pictures-Webpage<t1>
+<h1>Pictures-Webpage<h1>
 <h1> Name: Manjit Gurcha<h1>
 <h1>Date: 10/30/2017<h1>
 <h1>Course: CST205<h1>
