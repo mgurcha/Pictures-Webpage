@@ -1,0 +1,32 @@
+<!--
+Name: Manjit Gurcha
+Date: 10/30/2017
+Course: CST205
+Description: HTML view file that shows the three random images 
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Homework 4{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Pictures</h1>
+  <a href = "{{url_for('pictures', pic=img_1, num=0)}}"><p>{{title_1}}</p></a>
+  <a href = "{{url_for('pictures', pic=img_1, num=0)}}"><img src="/static/{{img_1}}.jpg" width="200"
+              class="img-responsive img-rounded"></a>
+
+
+  <a href = "{{url_for('pictures', pic=img_2, num=1)}}"><p>{{title_2}}</p></a>
+  <a href = "{{url_for('pictures', pic=img_2, num=1)}}"><img src="/static/{{img_2}}.jpg" width="200"
+              class="img-responsive img-rounded"></a>
+
+  <a href = "{{url_for('pictures',pic=img_3, num=2)}}"><p>{{title_3}}</p></a>
+  <a href = "{{url_for('pictures', pic=img_3, num=2)}}"><img src="/static/{{img_3}}.jpg" width="200"
+            class="img-responsive img-rounded"></a>
+
+
+
+</div>
+
+{% endblock %}

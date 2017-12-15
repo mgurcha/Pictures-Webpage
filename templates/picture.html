@@ -1,0 +1,25 @@
+<!--
+Name: Manjit Gurcha
+Date: 10/30/2017
+Course: CST205
+Description: HTML view file that shows the information regarding an image when it or its title is clicked 
+-->
+
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Picture{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+  <p> <h1>{{title}} {{author}}</h1>
+      <img class = "img-rounded img-responsive" src = "/static/{{id}}">
+      {{mode}} image in {{format}} format with width of {{width}} and height of {{height}}.
+  </p>
+
+  <a href = "{{url_for('index')}}"> Back to list of images </a>
+
+</div>
+
+{% endblock %}
